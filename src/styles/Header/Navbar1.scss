@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  gap: 20px;
+  color: #1ba098;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  list-style: none;
+  font-size: 25px;
+  margin: 0;
+  padding: 0px 20px;
+
+  &.hidden {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    display: none;
+  }
+
+  li:hover,
+  svg:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms;
+  }
+
+  .menu.hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar:nth-child(1) {
+    display: none;
+  }
+
+  .navbar:nth-child(2) {
+    display: block;
+  }
+}

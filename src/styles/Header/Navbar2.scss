@@ -1,0 +1,56 @@
+.navbar2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 60px;
+  left: -30%;
+  background-color: rgba(0, 31, 51, 0.9);
+  color: #1ba098;
+  border-bottom-right-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  list-style: none;
+  font-size: 20px;
+  width: 30%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+
+  &.active {
+    animation: slide-in 300ms forwards ease-out;
+  }
+
+  &.hidden {
+    animation: slide-out 300ms forwards ease-out;
+  }
+
+  li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 100ms;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .navbar2.active {
+    animation: slide-out 300ms forwards;
+  }
+}
