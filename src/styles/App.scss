@@ -5,7 +5,9 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #1b2735 100%);
   overflow-x: hidden;
+  margin-top: 60px;
 }
 
 a {

@@ -1,0 +1,77 @@
+$star-color: white;
+$small-speed: 75s;
+$medium-speed: 125s;
+$large-speed: 150s;
+
+@function multiple-bs($n) {
+  $value: "#{random(2000)}px #{random(2000)}px #{$star-color}";
+  @for $i from 2 through $n {
+    $value: "#{$value}, #{random(2000)}px #{random(2000)}px #{$star-color}";
+  }
+  @return unquote($value);
+}
+
+$bs-small: multiple-bs(200);
+$bs-medium: multiple-bs(600);
+$bs-large: multiple-bs(800);
+
+#stars {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation: float-stars linear infinite;
+  border-radius: 50%;
+  z-index: -1;
+
+  &-0 {
+    @extend #stars;
+    animation-duration: $small-speed;
+    box-shadow: $bs-small;
+    width: 1px;
+    height: 1px;
+
+    &:after {
+      box-shadow: $bs-small;
+      width: 1px;
+      height: 1px;
+    }
+  }
+
+  &-1 {
+    @extend #stars;
+    animation-duration: $medium-speed;
+    box-shadow: $bs-medium;
+    width: 2px;
+    height: 2px;
+
+    &:after {
+      width: 2px;
+      height: 2px;
+      box-shadow: $bs-medium;
+    }
+  }
+
+  &-2 {
+    @extend #stars;
+    animation-duration: $large-speed;
+    box-shadow: $bs-large;
+    width: 3px;
+    height: 3px;
+
+    &:after {
+      box-shadow: $bs-large;
+      width: 3px;
+      height: 3px;
+    }
+  }
+}
+
+@keyframes float-stars {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
