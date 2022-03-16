@@ -16,7 +16,7 @@ $bs-medium: multiple-bs(600);
 $bs-large: multiple-bs(800);
 
 #stars {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   animation: float-stars linear infinite;
@@ -69,11 +69,9 @@ $bs-large: multiple-bs(800);
 @keyframes float-stars {
   from {
     transform: translateY(0px);
-    // transform: translateY(100px);
   }
 
   to {
-    transform: translateY(-1000px);
-    // transform: translateY(-2000px);
+    transform: translateY(-2000px);
   }
 }
