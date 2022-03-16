@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header/Header';
 import Content from './Content/Content';
+import Footer from './Footer/Footer';
 import Background from './Background';
 
 export const globalContext = React.createContext(null);
@@ -15,6 +16,7 @@ function App() {
         <Background />
         <Header />
         <Content />
+        <Footer />
       </globalContext.Provider>
     </div>
   );
