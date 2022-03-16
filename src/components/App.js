@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
-import Background from './Header/Background';
+import Background from './Background';
 
 export const globalContext = React.createContext(null);
 const globalContextValue = {

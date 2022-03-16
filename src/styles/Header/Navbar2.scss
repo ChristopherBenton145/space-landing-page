@@ -16,6 +16,7 @@
   height: 120px;
   margin: 0;
   padding: 0;
+  z-index: 1;
 
   &.active {
     animation: slide-in 300ms forwards ease-out;
