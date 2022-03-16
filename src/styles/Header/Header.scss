@@ -44,6 +44,7 @@ header {
           color: #050801;
           box-shadow: 0 0 5px #1ba098, 0 0 25px #1ba098, 0 0 50px #1ba098,
             0 0 200px #1ba098;
+          transform: scale(1.05);
           cursor: pointer;
         }
 
@@ -108,6 +109,7 @@ header {
         &:hover {
           background: #deb992;
           color: #050801;
+          transform: scale(1.05);
           cursor: pointer;
         }
       }

@@ -1,7 +1,7 @@
 $star-color: white;
 $small-speed: 75s;
-$medium-speed: 125s;
-$large-speed: 150s;
+$medium-speed: 100s;
+$large-speed: 125s;
 
 @function multiple-bs($n) {
   $value: "#{random(2000)}px #{random(2000)}px #{$star-color}";
@@ -69,9 +69,11 @@ $bs-large: multiple-bs(800);
 @keyframes float-stars {
   from {
     transform: translateY(0px);
+    // transform: translateY(100px);
   }
 
   to {
-    transform: translateY(-2000px);
+    transform: translateY(-1000px);
+    // transform: translateY(-2000px);
   }
 }
