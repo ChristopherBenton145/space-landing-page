@@ -3,17 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   position: fixed;
   top: 60px;
-  left: -30%;
+  left: -40%;
   background-color: rgba(0, 31, 51, 0.9);
   color: #1ba098;
   border-bottom-right-radius: 50px;
   list-style: none;
-  font-size: 20px;
-  width: 30%;
-  height: 120px;
+  font-size: 25px;
+  width: 40%;
+  height: 160px;
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -45,7 +45,7 @@
   }
 
   100% {
-    left: -30%;
+    left: -40%;
   }
 }
 

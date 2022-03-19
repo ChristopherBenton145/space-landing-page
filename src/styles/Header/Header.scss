@@ -48,6 +48,10 @@ header {
           cursor: pointer;
         }
 
+        &:hover span {
+          display: none;
+        }
+
         span {
           position: absolute;
           display: block;
