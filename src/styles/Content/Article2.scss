@@ -3,11 +3,19 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  transform: translate(-100px);
   color: #1ba098;
   text-align: end;
   width: 90%;
   margin: auto;
   margin-bottom: 40vh;
+  opacity: 0;
+
+  &.appear {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 1s;
+  }
 
   .content {
     width: 80%;

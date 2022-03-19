@@ -1,6 +1,6 @@
 function Article1() {
   return (
-    <article className="article-1">
+    <article className="article-1 slider">
       <div className="content">
           <h3>Who are we?</h3>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua sed do eiusmod tempor.</h4>

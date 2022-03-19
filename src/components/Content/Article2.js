@@ -1,6 +1,6 @@
 function Article2() {
   return (
-    <article className="article-2">
+    <article className="article-2 slider">
       <img src="./images/world.svg"></img>
       <div className="content">
           <h3>Why choose us?</h3>
