@@ -1,6 +1,7 @@
 # Space Landing Page
 
 This is a super fun space landing page that I built. Enjoy.
+This entire project was build in under 2 days.
 
 ## Built With
 
